@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Norma:</b>
+  <%= @norma.norma %>
+</p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @norma.titulo %>
+</p>
+
+<p>
+  <b>Resumen:</b>
+  <%= @norma.resumen %>
+</p>
+
+<p>
+  <b>Notas:</b>
+  <%= @norma.notas %>
+</p>
+
+<p>
+  <b>Lugar:</b>
+  <%= @norma.lugar_id %>
+</p>
+
+<p>
+  <b>Ambito:</b>
+  <%= @norma.ambito_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_norma_path(@norma) %> |
+<%= link_to 'Back', normas_path %>

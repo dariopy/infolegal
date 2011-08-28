@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  norma: MyString
+  titulo: MyString
+  resumen: MyString
+  notas: MyString
+  lugar_id: 1
+  ambito_id: 1
+
+two:
+  norma: MyString
+  titulo: MyString
+  resumen: MyString
+  notas: MyString
+  lugar_id: 1
+  ambito_id: 1

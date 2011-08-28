@@ -1,0 +1,23 @@
+<h1>Listing ambitos</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ambitos.each do |ambito| %>
+  <tr>
+    <td><%= ambito.name %></td>
+    <td><%= link_to 'Show', ambito %></td>
+    <td><%= link_to 'Edit', edit_ambito_path(ambito) %></td>
+    <td><%= link_to 'Destroy', ambito, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ambito', new_ambito_path %>

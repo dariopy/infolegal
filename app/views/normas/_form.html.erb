@@ -1,0 +1,41 @@
+<%= form_for(@norma) do |f| %>
+  <% if @norma.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@norma.errors.count, "error") %> prohibited this norma from being saved:</h2>
+
+      <ul>
+      <% @norma.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :norma %><br />
+    <%= f.text_field :norma %>
+  </div>
+  <div class="field">
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :resumen %><br />
+    <%= f.text_field :resumen %>
+  </div>
+  <div class="field">
+    <%= f.label :notas %><br />
+    <%= f.text_field :notas %>
+  </div>
+  <div class="field">
+    <%= f.label :lugar_id %><br />
+    <%= f.text_field :lugar_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ambito_id %><br />
+    <%= f.text_field :ambito_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

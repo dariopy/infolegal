@@ -1,4 +1,10 @@
 Infolegal::Application.routes.draw do
+  resources :normas
+
+  resources :lugars
+
+  resources :ambitos
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
